@@ -482,17 +482,16 @@ color: rgb(60, 60, 59);
   max-width: 12rem;
   min-width: 2.8rem;
 }
-[class*=prev-slider-]{
+.prev-slide{
   left: 0;
 }
-[class*=next-slider-]{
+.next-slide{
   right: 0;
 }
-
-[class*=prev-slider-]:before{
+.prev-slide:before{
   content: "\e643";
 }
-[class*=next-slider-]:before{
+.next-slide:before{
   content: "\e644";
 }
 .tms-pagination{

@@ -63,14 +63,14 @@ $( document ).ready( function(){
 	// var carouselSlider = '.carousel-slider';
 
 	// Content Slider
-	var contentSlider = '.hero-slider';
-	var cSliderPrev = '.prev-slider-price';
-	var cSliderNext = '.next-slider-price';
-
+	// var contentSlider = '.hero-slider';
+	// var cSliderPrev = '.prev-slider-price';
+	// var cSliderNext = '.next-slider-price';
+	//
 	// Content Slider Mobile
-	var contentSliderMob = '.mob-slider';
-	var cSliderMobPrev = '.prev-slider-mob';
-	var cSliderMobNext = '.next-slider-mob';
+	// var contentSliderMob = '.mob-slider';
+	// var cSliderMobPrev = '.prev-slider-mob';
+	// var cSliderMobNext = '.next-slider-mob';
 
 	// // Full Width Slider
 	// var fullScreenSlider = '.tm-slider-container.fullscreen';
@@ -90,8 +90,8 @@ $( document ).ready( function(){
 
 	// Testimonial Slider
 	var testimonialSlider = '.feedback-container';
-	var tstmlSliderPrev = '.prev-slider-feed';
-	var tstmlSliderNext = '.next-slider-feed';
+	// var tstmlSliderPrev = '.prev-slider-feed';
+	// var tstmlSliderNext = '.next-slider-feed';
 	// var tstmlAuxNav = '.testimonial-slider-aux-nav .api-button';
 
 	// // Team Type 3 - Slider
@@ -194,16 +194,16 @@ $( document ).ready( function(){
 			// templateFunctions.teamSlider();
 			// templateFunctions.recentSlider();
 			// templateFunctions.carouselSlider();
-			if (desktop) {
-				for (var i = 0; i < 3; i++) {
-					templateFunctions.contentSliders(i);
-				}
-			}
-			else {
-				for (var i = 0; i < 7; i++) {
-					templateFunctions.contentSlidersMob(i);
-				}
-			}
+			// if (desktop) {
+			// 	for (var i = 0; i < 3; i++) {
+			// 		templateFunctions.contentSliders(i);
+			// 	}
+			// }
+			// else {
+			// 	for (var i = 0; i < 7; i++) {
+			// 		templateFunctions.contentSlidersMob(i);
+			// 	}
+			// }
 			templateFunctions.testimonialSlider();
 			// templateFunctions.fullScreenSlider();
 			templateFunctions.fullWidthSlider();
@@ -322,62 +322,62 @@ $( document ).ready( function(){
 		// 		retinaSupport: false
 		// 	});
 		// },
-		contentSliders: function(i){
-			$( contentSlider+i ).avalancheSlider({
-				animation: 'slide',
-				easing: 'easeInOutQuart',
-				speed: 900,
-				autoAdvance: false,
-				scaleMinHeight: 'auto',
-				carousel: true,
-				carouselVisible: 1,
-				carouselScaleHeight: true,
-				lazyLoad: false,
-				navArrows: false,
-				navPagination: true,
-				navShowOnHover: false,
-				retinaSupport: false
-			});
-
-			//API call for prev/next buttons
-			var contentSliderAPI = $( contentSlider+i ).data( 'avalancheSlider' );
-			$( cSliderPrev+i ).on( 'click', function( event ){
-				event.preventDefault();
-				contentSliderAPI.prevSlide();
-			});
-			$( cSliderNext+i ).on( 'click', function( event ){
-				event.preventDefault();
-				contentSliderAPI.nextSlide();
-			});
-		},
-		contentSlidersMob: function(i){
-			$( contentSliderMob+i ).avalancheSlider({
-				animation: 'slide',
-				easing: 'easeInOutQuart',
-				speed: 900,
-				autoAdvance: false,
-				scaleMinHeight: 'auto',
-				carousel: true,
-				carouselVisible: 1,
-				carouselScaleHeight: true,
-				lazyLoad: false,
-				navArrows: false,
-				navPagination: true,
-				navShowOnHover: false,
-				retinaSupport: false
-			});
-
-			//API call for prev/next buttons
-			var contentSliderAPI = $( contentSliderMob+i ).data( 'avalancheSlider' );
-			$( cSliderMobPrev+i ).on( 'click', function( event ){
-				event.preventDefault();
-				contentSliderAPI.prevSlide();
-			});
-			$( cSliderMobNext+i ).on( 'click', function( event ){
-				event.preventDefault();
-				contentSliderAPI.nextSlide();
-			});
-		},
+		// contentSliders: function(i){
+		// 	$( contentSlider+i ).avalancheSlider({
+		// 		animation: 'slide',
+		// 		easing: 'easeInOutQuart',
+		// 		speed: 900,
+		// 		autoAdvance: false,
+		// 		scaleMinHeight: 'auto',
+		// 		carousel: true,
+		// 		carouselVisible: 1,
+		// 		carouselScaleHeight: true,
+		// 		lazyLoad: false,
+		// 		navArrows: false,
+		// 		navPagination: true,
+		// 		navShowOnHover: false,
+		// 		retinaSupport: false
+		// 	});
+		//
+		// 	//API call for prev/next buttons
+		// 	var contentSliderAPI = $( contentSlider+i ).data( 'avalancheSlider' );
+		// 	$( cSliderPrev+i ).on( 'click', function( event ){
+		// 		event.preventDefault();
+		// 		contentSliderAPI.prevSlide();
+		// 	});
+		// 	$( cSliderNext+i ).on( 'click', function( event ){
+		// 		event.preventDefault();
+		// 		contentSliderAPI.nextSlide();
+		// 	});
+		// },
+		// contentSlidersMob: function(i){
+		// 	$( contentSliderMob+i ).avalancheSlider({
+		// 		animation: 'slide',
+		// 		easing: 'easeInOutQuart',
+		// 		speed: 900,
+		// 		autoAdvance: false,
+		// 		scaleMinHeight: 'auto',
+		// 		carousel: true,
+		// 		carouselVisible: 1,
+		// 		carouselScaleHeight: true,
+		// 		lazyLoad: false,
+		// 		navArrows: false,
+		// 		navPagination: true,
+		// 		navShowOnHover: false,
+		// 		retinaSupport: false
+		// 	});
+		//
+		// 	//API call for prev/next buttons
+		// 	var contentSliderAPI = $( contentSliderMob+i ).data( 'avalancheSlider' );
+		// 	$( cSliderMobPrev+i ).on( 'click', function( event ){
+		// 		event.preventDefault();
+		// 		contentSliderAPI.prevSlide();
+		// 	});
+		// 	$( cSliderMobNext+i ).on( 'click', function( event ){
+		// 		event.preventDefault();
+		// 		contentSliderAPI.nextSlide();
+		// 	});
+		// },
 		// fullScreenSlider: function(){
 		// 	$( fullScreenSlider ).avalancheSlider({
 		// 		animation: 'slide',
@@ -470,7 +470,8 @@ $( document ).ready( function(){
 		// 	});
 		// },
 		testimonialSlider: function(){
-			$( testimonialSlider ).avalancheSlider({
+			var slider = $( testimonialSlider );
+			slider.avalancheSlider({
 				animation: 'slide',
 				easing: 'easeInOutQuart',
 				speed: 900,
@@ -486,12 +487,12 @@ $( document ).ready( function(){
 				retinaSupport: false
 			});
 			//API call for prev/next buttons
-			var testimonialSliderAPI = $( testimonialSlider ).data( 'avalancheSlider' );
-			$( tstmlSliderPrev ).on( 'click', function( event ){
+			var testimonialSliderAPI = slider.data( 'avalancheSlider' );
+			slider.prev().on( 'click', function( event ){
 				event.preventDefault();
 				testimonialSliderAPI.prevSlide();
 			});
-			$( tstmlSliderNext ).on( 'click', function( event ){
+			slider.next().on( 'click', function( event ){
 				event.preventDefault();
 				testimonialSliderAPI.nextSlide();
 			});
