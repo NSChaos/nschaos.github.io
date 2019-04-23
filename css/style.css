@@ -746,22 +746,40 @@ color: rgb(60, 60, 59);
 #description .questions .question{width:calc(50% - 22px);margin-right:20px;margin-bottom:60px;display:inline-block;vertical-align:top;}
 #description .questions .question .question-head{padding:0 30px 20px 0;}
 #description .questions .question .question-head h3{width:100%;font-family:Nunito,Helvetica,Sans-serif;font-size:24px;color:#636363;font-weight:400;line-height:120%;display:inline-block;vertical-align:middle;}
-#description .questions .question .question-body p{padding:0 30px 0 0;font-family:Lato,Helvetica,Sans-serif;font-size:16px;color:#999;line-height:150%;}
+#description .questions .question .question-body div{padding:0 30px 0 0;font-family:Lato,Helvetica,Sans-serif;font-size:16px;color:#999;line-height:150%;}
+#description .questions .question .question-body div ul{
+  font-size: 100%;
+  list-style: disc;
+  margin-left: 6%;
+}
+#description .questions .question .question-body div ol{
+  font-size: 100%;
+  list-style: none;
+  margin-left: 3%;
+  counter-reset: list;
+}
+#description .questions .question .question-body div ol > li {
+    list-style: none;
+}
+#description .questions .question .question-body div ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+}
 #description .questions .question:nth-child(2n){margin-right:0;padding-left:20px;border-left:4px solid #4ab6f7;}
 #description .questions .question:nth-child(2n) .question-head{padding:0 0 20px 30px;}
-#description .questions .question:nth-child(2n) .question-body p{padding:0 0 0 30px;}
+#description .questions .question:nth-child(2n) .question-body div{padding:0 0 0 30px;}
 @media screen and (max-width:800px){
 #description .questions{text-align:center;}
 #description .questions .question{text-align:left;max-width:600px;width:calc(100% - 24px);margin-right:0;padding-right:20px;border-left:4px solid #4ab6f7;}
 #description .questions .question .question-head{padding:0 0 20px 30px;}
-#description .questions .question .question-body p{padding:0 0 0 30px;}
+#description .questions .question .question-body div{padding:0 0 0 30px;}
 #description .questions .question:nth-child(2n){padding-left:0;padding-right:20px;}
 }
 @media screen and (max-width:600px){
 #description .heading{margin-bottom:20px;}
 #description .heading h2{font-size:32px;}
 #description .questions .question .question-head h3{font-size:18px;}
-#description .questions .question .question-body p{font-size:14px;}
+#description .questions .question .question-body div{font-size:14px;}
 }
 @media screen and (max-width:530px){
 #description .heading h2{max-width:395px;}
