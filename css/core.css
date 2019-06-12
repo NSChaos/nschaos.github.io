@@ -9486,7 +9486,7 @@ body.boxed .header .header-inner {
 }
 
 .mobile .header {
-	position: static!important
+	position: static!important;
 }
 
 .mobile .header-fixed-on-mobile .header-inner {

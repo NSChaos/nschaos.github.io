@@ -785,3 +785,8 @@ color: rgb(60, 60, 59);
 #description .heading h2{max-width:395px;}
 #description .heading .heading-underline{width:180px;left:calc(50% - 90px);}
 }
+@media screen and (min-width:961px) and (max-width:1140px){
+	.header .navigation > ul > li > a{
+		margin: 0 0.95rem;
+	}
+}

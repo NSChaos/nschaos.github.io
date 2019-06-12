@@ -6672,8 +6672,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 	.mobile .header, .mobile .header .header-inner {
 		height: 6.5rem!important;
 		padding-top: 0px;
-
-		padding-bottom: 66px;
+		/* padding-bottom: 66px; */
 	}
 
 	.wrapper-inner{
